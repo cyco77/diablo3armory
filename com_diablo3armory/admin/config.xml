@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<config>
+  <fieldset name="common" addfieldpath="/administrator/components/com_diabo3armory/models/fields"
+		label="COM_DIABLO3ARMORY_CONFIGURATION_COMMON"
+		description="COM_DIABLO3ARMORY_CONFIGURATION_COMMON_DESC"
+	>
+    <field name="apikey" type="text" default="" label="COM_DIABLO3ARMORY_CONFIGURATION_COMMON_APIKEY" description="COM_DIABLO3ARMORY_CONFIGURATION_COMMON_APIKEY_DESC" />
+    <field name="cachetimeout" type="number" default="30" label="COM_DIABLO3ARMORY_CONFIGURATION_COMMON_CACHETIMEOUT" description="COM_DIABLO3ARMORY_CONFIGURATION_COMMON_CACHETIMEOUT_DESC" />
+    <field name="storeimages" type="radio" default="0" label="COM_DIABLO3ARMORY_CONFIGURATION_COMMON_STOREIMAGES" description="COM_DIABLO3ARMORY_CONFIGURATION_COMMON_STOREIMAGES_DESC">
+      <option value="1">JYES</option>
+      <option value="0">JNO</option>
+    </field>
+    <field name="language" type="list" default="de_DE" label="COM_DIABLO3ARMORY_CONFIGURATION_COMMON_LANGUAGE" description="COM_DIABLO3ARMORY_CONFIGURATION_COMMON_LANGUAGE_DESC" >
+      <option value="en_US">en_US</option>
+      <option value="en_GB">en_GB</option>
+      <option value="es_MX">es_MX</option>
+      <option value="es_ES">es_ES</option>
+      <option value="it_IT">it_IT</option>
+      <option value="pt_PT">pt_PT</option>
+      <option value="pt_BR">pt_BR</option>
+      <option value="fr_FR">fr_FR</option>
+      <option value="ru_RU">ru_RU</option>
+      <option value="pl_PL">pl_PL</option>
+      <option value="de_DE">de_DE</option>
+      <option value="ko_KR">ko_KR</option>
+      <option value="zh_TW">zh_TW</option>
+      <option value="zh_CN">zh_CN</option>
+    </field>
+
+  </fieldset>
+</config>

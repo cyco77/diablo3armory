@@ -1,0 +1,619 @@
+@font-face {
+    font-family: DiabloFont;
+    src: url(../font/diablo.ttf);
+}
+
+#diablo3armory_battletaglist {
+    width: 100%;
+}
+
+    #diablo3armory_battletaglist tbody tr {
+    }
+
+.diablo3armory_battletaglist_row0:hover, .diablo3armory_battletaglist_row1:hover {
+    background-color: #eee8aa;
+    cursor: pointer;
+}
+
+.diablo3armory_battletaglist_tag {
+    padding: 3px;
+    text-align: left;
+    font-family: DiabloFont;
+    font-size: 18px;
+}
+
+.diablo3armory_battletaglist_name {
+    padding: 3px;
+    text-align: left;
+    font-family: DiabloFont;
+    font-size: 18px;
+}
+
+.diablo3armory_battletaglist_paragon {
+    padding: 3px;
+    text-align: center;
+    font-family: DiabloFont;
+    font-size: 18px;
+}
+
+.herocell {
+    float: left;
+    width: 83px;
+    text-align: center;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-bottom: 2px;
+}
+
+    .herocell:hover {
+        cursor: pointer;
+    }
+
+.heroimage:hover {
+    opacity: 0.8;
+}
+
+.heroes_toggleimage {
+    min-width: 16px;
+    width: 16px;
+    height: 16px;
+}
+
+.battletag_hero_div {
+    border: 1px solid #636363;
+    text-align: left;
+    padding-left: 3px;
+    background-color: #000;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.battletag_hero_seasonal_div {
+    border: 1px solid #008000;
+    text-align: left;
+    padding-left: 3px;
+    background-color: #000;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.battletag_hero_hardcore_div {
+    border: 1px solid #e60101;
+    text-align: left;
+    padding-left: 3px;
+    background-color: #000;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.battletag_hero_level {
+    color: #f0f8ff;
+}
+
+.battletag_hero_seasonal_level {
+    color: #008000;
+}
+
+.battletag_hero_hardcore_level {
+    color: #e60101;
+}
+
+.battletag_hero_name {
+    color: #a99877;
+}
+
+.battletag_hero_seasonal_name {
+    color: #a99877;
+}
+
+.battletag_hero_hardcore_name {
+    color: #a99877;
+}
+
+.hidden_battletag {
+    display: none;
+}
+
+.hidden_heroid {
+    display: none;
+}
+
+.hidden_detailsloaded {
+    display: none;
+}
+
+.herotooltip {
+    text-align: center;
+    color: white;
+    background-color: black;
+    border: 1px solid #636363;
+    position: absolute;
+    opacity: 1;
+    z-index: 1001;
+}
+
+.herotooltip_loading {
+    margin: 15px;
+    background-color: black;
+    color: white;
+    font-family: DiabloFont;
+    font-size: 20px;
+}
+
+.tooltip .arrow {
+    margin-bottom: 8px;
+    margin-top: -5px;
+}
+
+/* Hero Details*/
+
+.paperdoll {
+    min-width: 596px;
+}
+
+.paperdollsmall {
+    display: none;
+    min-width: 250px;
+}
+
+.detail_hero_name {
+    position: absolute;
+    top: 38px;
+    left: 220px;
+    width: 300px;
+    text-align: center;
+    color: white;
+    font-family: DiabloFont;
+    font-size: 20px;
+    margin: 10px;
+    text-shadow: 2px 2px 2px #000000;
+    line-height: 1;
+}
+
+.detail_hero_values {
+    position: absolute;
+    top: 220px;
+    left: 38px;
+    font-family: DiabloFont;
+    font-size: 14px;
+    text-align: left;
+    text-shadow: 2px 2px 2px #000000;
+    line-height: 1;
+}
+
+/* Tooltip Items Attributes */
+
+.itembackgound_orange {
+    background-image: url('../images/item-bg/orange.png');
+    border: 1px solid #c29337;
+}
+
+.itembackgound_green {
+    background-image: url('../images/item-bg/green.png');
+    border: 1px solid #748e3d;
+}
+
+.itembackgound_yellow {
+    background-image: url('../images/item-bg/yellow.png');
+    border: 1px solid #b1a73c;
+}
+
+.itembackgound_blue {
+    background-image: url('../images/item-bg/blue.png');
+    border: 1px solid #90c8d3;
+}
+
+.detail_hero_torso {
+    position: absolute;
+    top: 130px;
+    left: 356px;
+}
+
+.detail_hero_div_torso {
+    position: absolute;
+    top: 137px;
+    left: 352px;
+    width: 48px;
+    height: 68px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+
+.detail_hero_head {
+    position: absolute;
+    top: 85px;
+    left: 361px;
+}
+
+.detail_hero_div_head {
+    position: absolute;
+    top: 95px;
+    left: 356px;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+
+.detail_hero_feet {
+    position: absolute;
+    top: 281px;
+    left: 360px;
+}
+
+.detail_hero_div_feet {
+    position: absolute;
+    top: 287px;
+    left: 357px;
+    width: 38px;
+    height: 51px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+
+.detail_hero_hands {
+    position: absolute;
+    top: 162px;
+    left: 296px;
+}
+
+.detail_hero_div_hands {
+    position: absolute;
+    top: 169px;
+    left: 291px;
+    width: 40px;
+    height: 52px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+
+.detail_hero_shoulders {
+    position: absolute;
+    top: 105px;
+    left: 311px;
+}
+
+.detail_hero_div_shoulders {
+    position: absolute;
+    top: 109px;
+    left: 307px;
+    width: 40px;
+    height: 53px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+
+.detail_hero_legs {
+    position: absolute;
+    top: 225px;
+    left: 361px;
+}
+
+.detail_hero_div_legs {
+    position: absolute;
+    top: 232px;
+    left: 357px;
+    width: 38px;
+    height: 51px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+
+.detail_hero_bracers {
+    position: absolute;
+    top: 165px;
+    left: 426px;
+}
+
+.detail_hero_div_bracers {
+    position: absolute;
+    top: 169px;
+    left: 421px;
+    width: 40px;
+    height: 52px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+
+.detail_hero_mainHand {
+    position: absolute;
+    top: 270px;
+    left: 296px;
+}
+
+.detail_hero_div_mainHand {
+    position: absolute;
+    top: 262px;
+    left: 292px;
+    width: 38px;
+    height: 77px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+
+.detail_hero_offHand {
+    position: absolute;
+    top: 270px;
+    left: 424px;
+}
+
+.detail_hero_div_offHand {
+    position: absolute;
+    top: 262px;
+    left: 422px;
+    width: 38px;
+    height: 77px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+
+.detail_hero_waist {
+    position: absolute;
+    top: 201px;
+    left: 360px;
+}
+
+.detail_hero_div_waist {
+    position: absolute;
+    top: 208px;
+    left: 352px;
+    width: 48px;
+    height: 20px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+
+.detail_hero_rightFinger {
+    position: absolute;
+    top: 226px;
+    left: 425px;
+}
+
+.detail_hero_div_rightFinger {
+    position: absolute;
+    top: 229px;
+    left: 429px;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+
+.detail_hero_leftFinger {
+    position: absolute;
+    top: 226px;
+    left: 295px;
+}
+
+.detail_hero_div_leftFinger {
+    position: absolute;
+    top: 229px;
+    left: 299px;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+
+.detail_hero_neck {
+    position: absolute;
+    top: 124px;
+    left: 408px;
+}
+
+.detail_hero_div_neck {
+    position: absolute;
+    top: 122px;
+    left: 407px;
+    width: 33px;
+    height: 33px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+
+.detail_hero_active_skills {
+    position: absolute;
+    top: 120px;
+    left: 480px;
+    width: 88px;
+}
+
+    .detail_hero_active_skills img {
+        margin: 2px;
+        width: 36px;
+        min-width: 36px;
+    }
+
+.detail_hero_passive_skills {
+    position: absolute;
+    top: 250px;
+    left: 480px;
+    width: 88px;
+}
+
+    .detail_hero_passive_skills img {
+        margin: 2px;
+        width: 36px;
+        min-width: 36px;
+    }
+
+
+@media all and (max-width: 480px) {
+
+    .battletags_hidemobile {
+        display: none;
+    }
+
+    .paperdoll {
+        display: none;
+    }
+
+    .paperdollsmall {
+        display: block;
+    }
+
+
+    .detail_hero_name {
+        left: 0px;
+        width: 230px;
+    }
+
+    .detail_hero_values {
+        top: 630px;
+    }
+
+    /* Tooltip Items Attributes */
+
+    .detail_hero_torso {
+        left: 106px;
+    }
+
+    .detail_hero_div_torso {
+        left: 102px;
+    }
+
+    .detail_hero_head {
+        left: 111px;
+    }
+
+    .detail_hero_div_head {
+        left: 106px;
+    }
+
+    .detail_hero_feet {
+        left: 110px;
+    }
+
+    .detail_hero_div_feet {
+        left: 107px;
+    }
+
+    .detail_hero_hands {
+        left: 46px;
+    }
+
+    .detail_hero_div_hands {
+        left: 41px;
+    }
+
+    .detail_hero_shoulders {
+        left: 61px;
+    }
+
+    .detail_hero_div_shoulders {
+        left: 57px;
+    }
+
+    .detail_hero_legs {
+        left: 111px;
+    }
+
+    .detail_hero_div_legs {
+        left: 107px;
+    }
+
+    .detail_hero_bracers {
+        left: 176px;
+    }
+
+    .detail_hero_div_bracers {
+        left: 171px;
+    }
+
+    .detail_hero_mainHand {
+        left: 46px;
+    }
+
+    .detail_hero_div_mainHand {
+        left: 42px;
+    }
+
+    .detail_hero_offHand {
+        left: 174px;
+    }
+
+    .detail_hero_div_offHand {
+        left: 172px;
+    }
+
+    .detail_hero_waist {
+        left: 110px;
+    }
+
+    .detail_hero_div_waist {
+        left: 102px;
+    }
+
+    .detail_hero_rightFinger {
+        left: 175px;
+    }
+
+    .detail_hero_div_rightFinger {
+        left: 179px;
+    }
+
+    .detail_hero_leftFinger {
+        left: 45px;
+    }
+
+    .detail_hero_div_leftFinger {
+        left: 49px;
+    }
+
+    .detail_hero_neck {
+        left: 158px;
+    }
+
+    .detail_hero_div_neck {
+        left: 157px;
+    }
+
+    .detail_hero_active_skills {
+        top: 350px;
+        left: 40px;
+        width: 170px;
+    }
+
+        .detail_hero_active_skills img {
+            margin: 2px;
+            width: 36px;
+            min-width: 36px;
+        }
+
+    .detail_hero_passive_skills {
+        top: 435px;
+        left: 20px;
+        width: 210px;
+    }
+
+        .detail_hero_passive_skills img {
+            margin: 2px;
+            width: 36px;
+            min-width: 36px;
+        }
+}
+
+
+/* D3 Tooltip Overrides*/
+
+.icon-item-gradient {
+    width: auto !important;
+    height: auto !important;
+}
+
+.d3-tooltip-wrapper {
+    text-align: left !important;
+}

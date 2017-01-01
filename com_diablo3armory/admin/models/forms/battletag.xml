@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <fieldset>
+    <field name="id" type="hidden"		/>
+    <field name="tag" type="text" label="COM_DIABLO3ARMORY_BATTLETAG_FIELD_TAG_LABEL" description="COM_DIABLO3ARMORY_BATTLETAG_FIELD_TAG_DESC" size="40" class="inputbox" required="true"		/>
+    <field name="server" type="Diablo3Server" label="COM_DIABLO3ARMORY_BATTLETAG_FIELD_SERVER_LABEL" description="COM_DIABLO3ARMORY_BATTLETAG_FIELD_SERVER_DESC" size="5" class="inputbox" required="true"	default="eu"	/>
+    <field name="name" type="text" label="COM_DIABLO3ARMORY_BATTLETAG_FIELD_NAME_LABEL" description="COM_DIABLO3ARMORY_BATTLETAG_FIELD_NAME_DESC" size="40" class="inputbox" required="true"		/>    
+    <field id="published" name="published" type="list" label="JSTATUS" description="JFIELD_PUBLISHED_DESC" class="inputbox" size="1" default="1"		> 
+      <option value="1">
+        JPUBLISHED
+      </option>
+      <option value="0">
+        JUNPUBLISHED
+      </option>
+    </field>
+    <field name="ordering" type="hidden"/>
+  </fieldset>
+</form>
